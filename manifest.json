@@ -1,0 +1,13 @@
+{
+    "name": "snake",
+    "short_name": "snake",
+    "description": "Snake the game.",
+    "scope": "./",
+    "start_url": "./",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen",
+    "display_override": ["standalone"],
+    "icons": [
+    ]
+}

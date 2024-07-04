@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <link rel="manifest" href="./manifest.json">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>High score:<span class=highscore id="highscore"> </span></h1>
+        <h1>score:<span class="score" id="score"> </span></h1>
+        <button class="button" id="game_over" type="button"></button>
+    </header>
+    <div class="grid">
+        <nav>
+            <button class="controlbutton" id="UP" type="button">Up</button>
+            <button class="controlbutton" id="DOWN" type="button">down</button>
+        </nav>
+
+
+
+        <div id="gameBoard"></div>
+        <nav>
+            <button class="controlbutton" id="LEFT" type="button">left</button>
+            <button class="controlbutton" id="RIGHT" type="button">right</button>
+        </nav>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
