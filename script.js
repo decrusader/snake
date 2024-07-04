@@ -131,7 +131,7 @@ function left() {
 }
 
 function right() {
-    if (direction !== "LEFT" || snake.length === 1) direction = "RIGTH";
+    if (direction !== "LEFT" || snake.length === 1) direction = "RIGHT";
 }
 
 document.querySelector("#UP").addEventListener("click", up);
