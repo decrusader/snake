@@ -78,7 +78,7 @@ nav ul {
 }
 
 /* Media Queries for mobile responsiveness */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     #gameBoard {
         width: 400px;
         height: 400px;
