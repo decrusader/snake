@@ -119,19 +119,19 @@ function changeDirection(event) {
 }
 
 function up() {
-    if (direction !== "UP") direction = "DOWN";
+    if (direction !== "DOWN" && snake.length > 1) direction = "UP";
 }
 
 function down() {
-    if (direction !== "DOWN") direction = "UP";
+    if (direction !== "UP" && snake.length > 1) direction = "DOWN";
 }
 
 function left() {
-    if (direction !== "RIGHT") direction = "LEFT";
+    if (direction !== "RIGHT" && snake.length > 1) direction = "LEFT";
 }
 
 function right() {
-    if (direction !== "RIGHT") direction = "LEFT";
+    if (direction !== "LEFT" && snake.length > 1) direction = "RIGTH";
 }
 
 document.querySelector("#UP").addEventListener("click", up);
