@@ -119,19 +119,19 @@ function changeDirection(event) {
 }
 
 function up() {
-    if (direction !== "DOWN" && snake.length > 1) direction = "UP";
+    if (direction !== "DOWN" || snake.length === 1) direction = "UP";
 }
 
 function down() {
-    if (direction !== "UP" && snake.length > 1) direction = "DOWN";
+    if (direction !== "UP" || snake.length === 1) direction = "DOWN";
 }
 
 function left() {
-    if (direction !== "RIGHT" && snake.length > 1) direction = "LEFT";
+    if (direction !== "RIGHT" || snake.length === 1) direction = "LEFT";
 }
 
 function right() {
-    if (direction !== "LEFT" && snake.length > 1) direction = "RIGTH";
+    if (direction !== "LEFT" || snake.length === 1) direction = "RIGTH";
 }
 
 document.querySelector("#UP").addEventListener("click", up);
