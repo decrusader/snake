@@ -118,20 +118,20 @@ function changeDirection(event) {
     }
 }
 
-function up(){
-    direction = "UP";
+function up() {
+    if (direction !== "UP") direction = "DOWN";
 }
 
-function down(){
-    direction = "DOWN";
+function down() {
+    if (direction !== "DOWN") direction = "UP";
 }
 
-function left(){
-    direction = "LEFT";
+function left() {
+    if (direction !== "RIGHT") direction = "LEFT";
 }
 
-function right(){
-    direction = "RIGHT";
+function right() {
+    if (direction !== "RIGHT") direction = "LEFT";
 }
 
 document.querySelector("#UP").addEventListener("click", up);
