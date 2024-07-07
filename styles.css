@@ -32,6 +32,14 @@ body {
     background-color: #FF0000;
 }
 
+.stone {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-color: #535151; 
+}
+
+
 header {
     width: 90%;
     max-width: 345px;
@@ -84,7 +92,9 @@ nav ul {
         height: 400px;
     }
 
-    .snake, .food {
+    .snake,
+    .food,
+    .stone {
         width: 20px;
         height: 20px;
     }
@@ -108,4 +118,10 @@ nav ul {
         grid-template-columns: 10rem 1fr 10rem;
         grid-template-rows: 1fr;
     }
+
+    .snake.head {
+        background-color: #019e01;
+        /* Dark green color for the head */
+    }
+
 }
